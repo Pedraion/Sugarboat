@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.Sugarboat"
+    tools:context=".view.ConfirmActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtViewPaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/activity_confirm_txtView_paste"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPaste">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_confirm_txtView_email"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexBoxInteresting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm0"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="_"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm1"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:hint="_"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm2"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:hint="_"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm3"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:hint="_"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm4"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:hint="_"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirm5"
+                app:hintEnabled="false"
+                style="@style/TextInputEditTextConfirm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtInputConfirm5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:hint="_"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_confirm_txtView_limit"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            style="@style/materialButtonDefault"
+            android:layout_marginTop="32dp"
+            android:text="@string/activity_confirm_btn_validate" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

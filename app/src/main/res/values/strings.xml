@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Sugarboat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sexual_orientation_options">
+        <item>O que procuras:</item>
+        <item>Criar Conexões</item>
+        <item>Relação duradoura</item>
+        <item>Relação Casual</item>
+        <item>Fazer Amigos</item>
+    </string-array>
+
+    <string name="account_edit_txt_showname">Nome de apresentação</string>
+    <string name="account_edit_txt_bio">Bio</string>
+    <string name="account_edit_txt_interests">Interesses</string>
+    <string name="account_edit_bnt_select_image">Selecionar Imagem</string>
+    <string name="account_edit_bnt_save">Salvar</string>
+    <string name="account_edit_img_profile">Imagem de perfil</string>
+    <string name="fragment_account_txt_user_info">${name}, ${age} years - ${location}</string>
+    <string name="fragment_account_txt_user_bio">${userbio}</string>
+    <string name="fragment_account_txt_user_interests">${user.tag1}; ${user.tag2}; ${user.tag3};</string>
+    <string name="fragment_account_icon_config">Configurações</string>
+    <string name="activity_login_txtInput_username">Nome de usuário / e-mail</string>
+    <string name="activity_login_txtInput_password">Senha</string>
+    <string name="activity_login_txtView_createAccount">Criar conta</string>
+    <string name="activity_login_txtView_forgot">Esqueceu a senha?</string>
+    <string name="activity_login_bnt_login">Login</string>
+    <string name="error_message_empty_field">Preenchimento obrigatório</string>
+    <string name="error_message_invalid_password">Senha inválida</string>
+    <string name="error_message_not_implemented">Ainda não implementeado</string>
+    <string name="activity_register_txtView_login">Já tem conta? Logar</string>
+    <string name="activity_register_btn_register">Cadastrar-se</string>
+    <string name="activity_register_txtInput_confirm_password">Confirme sua senha</string>
+    <string name="error_message_different_password">As senhas diferem entre si</string>
+    <string name="activity_confirm_txtView_email">" Please verify your email address using the code above to complete account setup."</string>
+    <string name="activity_confirm_txtView_limit">Your verification code will expire in 30 minutes, so make sure you use it as soon as you can.</string>
+    <string name="activity_confirm_txtView_paste">Paste</string>
+    <string name="activity_confirm_btn_validate">Validar</string>
+    <string name="error_message_not_valid_code">Código não aceito</string>
+    <string name="error_message_clipboard_null">Não existe nenhum código a ser colado</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.sugarboat.exploreFragment"
+        android:label="ExploreFragment">
+        <action
+            android:id="@+id/action_exploreFragment_to_freeTonightFragment"
+            app:destination="@id/freeTonightFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_lookingForLoveFragment"
+            app:destination="@id/lookingForLoveFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_newFriendshipsFragment"
+            app:destination="@id/newFriendshipsFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_talentSwapFragment"
+            app:destination="@id/talentSwapFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_sportsActivitiesFragment"
+            app:destination="@id/sportsActivitiesFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_interestSharingFragment"
+            app:destination="@id/interestSharingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/freeTonightFragment"
+        android:name="com.example.sugarboat.free_tonight_fragment"
+        android:label="FreeTonightFragment" />
+
+    <fragment
+        android:id="@+id/lookingForLoveFragment"
+        android:name="com.example.sugarboat.lookingforloveFragment"
+        android:label="LookingForLoveFragment" />
+
+    <fragment
+        android:id="@+id/newFriendshipsFragment"
+        android:name="com.example.sugarboat.newfriendshipsFragment"
+        android:label="NewFriendshipsFragment" />
+
+    <fragment
+        android:id="@+id/talentSwapFragment"
+        android:name="com.example.sugarboat.talentswapFragment"
+        android:label="TalentSwapFragment" />
+
+    <fragment
+        android:id="@+id/sportsActivitiesFragment"
+        android:name="com.example.sugarboat.sportsactivitiesFragment"
+        android:label="SportsActivitiesFragment" />
+
+    <fragment
+        android:id="@+id/interestSharingFragment"
+        android:name="com.example.sugarboat.interestsharingFragment"
+        android:label="InterestSharingFragment" />
+
+</navigation>

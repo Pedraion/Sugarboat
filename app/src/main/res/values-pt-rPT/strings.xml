@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sugarboat</string>
+    <string name="hello_blank_fragment">Saudações desde pedaço em branco</string>
+    <string name="account_edit_txt_showname">Nome de apresentação</string>
+    <string name="account_edit_txt_bio">Biografia</string>
+    <string name="account_edit_txt_interests">Interesses</string>
+    <string name="account_edit_bnt_select_image">Seleccionar imagem</string>
+    <string name="account_edit_bnt_save">Salvar</string>
+    <string name="account_edit_img_profile">Imagem de perfil</string>
+    <string name="fragment_account_txt_user_info">${name}, ${age} anos - ${location}</string>
+    <string name="fragment_account_txt_user_bio">${userbio}</string>
+    <string name="fragment_account_txt_user_interests">${user.tag1}; ${user.tag2}; ${user.tag3};</string>
+    <string name="fragment_account_icon_config">Ajustes</string>
+    <string name="activity_login_txtInput_password">Palavra-passe</string>
+    <string name="activity_login_txtInput_username">Nome de usuário / Correio electrónico</string>
+    <string name="activity_login_txtView_createAccount">Criar conta</string>
+    <string name="activity_login_txtView_forgot">Esqueceste-te a tua palavra passe?</string>
+    <string name="activity_login_bnt_login">Iniciar sessão</string>
+    <string name="error_message_empty_field">Preenchimento obrigatório</string>
+    <string name="error_message_invalid_password">Palavra-passe não aceita</string>
+    <string name="error_message_not_implemented">Ainda não implementado</string>
+    <string name="activity_register_txtView_login">Já tens conta? Conectar-se</string>
+    <string name="activity_register_btn_register">Registra-te</string>
+    <string name="activity_register_txtInput_confirm_password">Confira a tua palavra-passe</string>
+    <string name="error_message_different_password">As palavras-passe são diferentes</string>
+    <string name="activity_confirm_txtView_email">Por favor, verifica o teu correio e meta o código enviado para completar os ajustes da tua conta.</string>
+    <string name="activity_confirm_txtView_limit">O teu código de verificação expirará em 30 minutos. Faz se favor usá-lo já.</string>
+    <string name="activity_confirm_txtView_paste">Colar</string>
+    <string name="activity_confirm_btn_validate">Verificar</string>
+    <string name="error_message_not_valid_code">Código não aceito!</string>
+    <string name="error_message_clipboard_null">Não existe nenhum código a ser colado</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/blank_2_grids_collagen">
+
+    <com.example.sugarboat.HeightWrappingViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="350dp"
+        android:layout_height="375dp"
+        android:layout_gravity="center" />
+
+</FrameLayout>

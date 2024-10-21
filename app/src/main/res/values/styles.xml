@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedImageViewProfile" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">80dp</item>
+    </style>
+
+    <style name="textInputEditTextLogin" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="errorEnabled">true</item>
+        <item name ="boxCornerRadiusBottomStart">50dp</item>
+        <item name="boxCornerRadiusBottomEnd">50dp</item>
+        <item name="boxCornerRadiusTopEnd">50dp</item>
+        <item name="boxCornerRadiusTopStart">50dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="endIconTint">@color/gray_400</item>
+        <item name="boxStrokeColor">#AD71FB</item>
+        <item name="errorTextColor">@color/Chilli_Pepper</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="android:textColor">@color/gray_600</item>
+        <item name="startIconTint">@color/gray_400</item>
+    </style>
+
+    <style name="TextInputEditTextConfirm" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">6dp</item>
+        <item name ="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="endIconTint">@color/gray_400</item>
+        <item name="boxStrokeColor">#AD71FB</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="android:textColor">@color/gray_600</item>
+        <item name="startIconTint">@color/gray_400</item>
+    </style>
+
+    <style name="materialButtonDefault" parent="Widget.Material3.Button.TextButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="materialTextViewLogin" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/Rubber_Ducky_Yellow</item>
+    </style>
+</resources>

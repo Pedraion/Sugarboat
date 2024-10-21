@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Escolha os teus interesses"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/flexBoxDialogInteresting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:flexWrap="wrap"
+        app:justifyContent="center"
+        app:singleLine="false"
+        app:singleSelection="false">
+
+        <!--</com.google.android.material.chip.ChipGroup>material.chip.ChipGroup> </com.google.android.material.chip.ChipGroup>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexBoxDialogInteresting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:flexWrap="wrap"
+        app:justifyContent="center">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Estelionato"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#FA2478"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_menu_delete"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Formação de quadrilha"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#149C5C"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Furto qualificado"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#3090C7"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Assasinato"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#FDD017"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Conspiração"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#625D5D"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Traição"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#E25822"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Roubo"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#4CAF50"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Sonegação de impostos"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#0277BD"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="3dp"
+            android:layoutDirection="rtl"
+            android:text="Usar VPN"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:chipBackgroundColor="#F1DD38"
+            app:chipCornerRadius="50dp"
+            app:chipEndPadding="8dp"
+            app:chipIcon="@android:drawable/ic_input_add"
+            app:chipIconTint="#FFF"
+            app:chipStartPadding="8dp"
+            app:chipStrokeColor="@android:color/transparent" />-->
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/bntDialogConfirm"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Confirmar"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

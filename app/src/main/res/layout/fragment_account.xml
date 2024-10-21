@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/logosb1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0"
+            android:text="@string/app_name"
+            android:textColor="#FFEA80FC"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgConfig"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            app:tint="#FFEA80FC"
+            android:contentDescription="@string/fragment_account_icon_config"
+            app:srcCompat="@drawable/baseline_settings_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgProfileEdit"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_picture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:strokeColor="@color/pink_logo"
+                app:strokeWidth="5dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/floatingEditButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#FFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/baseline_edit_24"
+                app:contentPadding="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imgProfileEdit"
+                app:layout_constraintTop_toTopOf="@+id/imgProfileEdit"
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtUserBasicInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/fragment_account_txt_user_info"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txtUserBasicBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/fragment_account_txt_user_bio"
+            android:textAlignment="viewStart"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtUserBasicInterests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/fragment_account_txt_user_interests"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexBoxInteresting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="7dp"
+            android:orientation="horizontal"
+            app:flexWrap="wrap"
+            app:justifyContent="center">
+
+            <!--<com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:ensureMinTouchTargetSize="false"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Assalto"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#FA2478"
+                app:chipCornerRadius="50dp" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Jogos de azar"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#E64A19"
+                app:chipCornerRadius="50dp" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Comer todo mundo"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#3A2478"
+                app:chipCornerRadius="50dp" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Trocação"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#2FFA78"
+                app:chipCornerRadius="50dp" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Torcida organizada"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#F9A825"
+                app:chipCornerRadius="50dp" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Narcotrafico"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#76FF03"
+                app:chipCornerRadius="50dp"
+                app:chipIcon="@drawable/baseline_edit_24"
+                app:chipIconTint="#FFF" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="11sp"
+                app:chipIconSize="11sp"
+                app:chipMinTouchTargetSize="0dp"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="3dp"
+                app:chipStrokeColor="@android:color/transparent"
+                android:text="Pixar muros"
+                android:textColor="#FFF"
+                app:chipBackgroundColor="#FF1744"
+                app:chipCornerRadius="50dp" />-->
+        </com.google.android.flexbox.FlexboxLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
